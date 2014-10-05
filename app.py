@@ -51,6 +51,10 @@ def get_zdrava_pizza(url):
     def _():
 
         day_tag = get_day_tag(url)
+
+        if day_tag == None:
+            return {}
+
         listek = []
         for sibling in day_tag.parent.next_siblings:
             try:
@@ -95,7 +99,8 @@ def main():
     #                         vecere=get_menza_vecere(),
     #                         pizza=get_pizza(),
     #                         zdrava=get_zdrava())
-    return "Hello world"
+    text = str(get_pizza()) + str(get_zdrava)
+    return text
 
 
 if __name__ == '__main__':
