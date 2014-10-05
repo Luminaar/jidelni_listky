@@ -91,10 +91,11 @@ def get_text():
 
 @app.route('/')
 def main():
-    return render_template("index.html", obed=get_menza_obed(),
-                            vecere=get_menza_vecere(),
-                            pizza=get_pizza(),
-                            zdrava=get_zdrava())
+    # return render_template("index.html", obed=get_menza_obed(),
+    #                         vecere=get_menza_vecere(),
+    #                         pizza=get_pizza(),
+    #                         zdrava=get_zdrava())
+    return "Hello world"
 
 
 if __name__ == '__main__':
