@@ -1,4 +1,6 @@
 jidelni_listky
 ==============
 
-Jednoduchá weboví aplikace
+Jednoduchá webová aplikace
+Získává informace o jídelních lístcích
+v meznách na Žižkově a zobrazuje je v  přehlednější formě
