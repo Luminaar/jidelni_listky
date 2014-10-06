@@ -28,9 +28,15 @@ def get_menza(url):
 
         listek = []
 
+        x = False
         for sibling in day_tag.parent.parent.next_siblings:
+            if x:
+                break
             if sibling != "\n":
                 for child in sibling.children:
+                    if child.name == "th":
+                        x = True
+                        break
                     if child != "\n":
                         listek.append(child.text)
 
@@ -72,8 +78,8 @@ def get_zdrava_pizza(url):
         n = 0
         for i in listek:
             x = i.split(": ")
-            # structure meals into dict
-            dict_listek[n] = [x[0], x[1]]
+            # structure meals into dict, add whitespaces after every comma (with replace)
+            dict_listek[n] = [x[0], x[1].replace(",", ", ")]
             n += 1
 
         return dict_listek
@@ -86,22 +92,11 @@ get_zdrava = get_zdrava_pizza("http://www.vse.cz/menza/jidelni_listek_Zdrava_vyz
 get_menza_obed = get_menza("http://www.vse.cz/menza/obedy.php#5")
 get_menza_vecere = get_menza("http://www.vse.cz/menza/vecere.php#5")
 
-def get_text():
-    text = "<br>".join(get_menza_obed()) + "<br><br>" + "<br>".join(get_menza_vecere())
-    text += "<br>".join(get_pizza()) + "<br><br>" + "<br>".join(get_zdrava())
-
-    return text
-
 
 @app.route('/')
 def main():
-    # return render_template("index.html", obed=get_menza_obed(),
-    #                         vecere=get_menza_vecere(),
-    #                         pizza=get_pizza(),
-    #                         zdrava=get_zdrava())
-    
-    return render_template("index.html", obed={},
-                            vecere={},
+    return render_template("index.html", obed=get_menza_obed(),
+                            vecere=get_menza_vecere(),
                             pizza=get_pizza(),
                             zdrava=get_zdrava())
 
