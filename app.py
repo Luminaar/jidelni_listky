@@ -99,8 +99,11 @@ def main():
     #                         vecere=get_menza_vecere(),
     #                         pizza=get_pizza(),
     #                         zdrava=get_zdrava())
-    text = str(get_pizza()) + str(get_zdrava)
-    return text
+    
+    return render_template("index.html", obed={},
+                            vecere={},
+                            pizza=get_pizza(),
+                            zdrava=get_zdrava())
 
 
 if __name__ == '__main__':
