@@ -18,7 +18,7 @@
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     </head>
 
-    <body>
+    <body link="#DBD400" vlink="#B5AF00" alink="#FFF700">
         <h1>Jídelní lístky</h1>
 
         <h2>O projektu</h2>
@@ -34,14 +34,14 @@
 
             <h2>Menza</h2>
                     <table class="container">
-                        <tr><td><h3>Oběd</h3></td><td></td></tr>
+                        <tr><td colspan=2><h3>Oběd</h3></td></tr>
                         {% for key in obed %}
                             <tr><td>{{obed[loop.index0][0]}}</td><td>{{obed[loop.index0][1]}}</td></tr>
                         {% endfor %}
                     </table>
 
                     <table class="container">
-                        <tr><td><h3>Večeře</h3></td><td></td></tr>
+                        <tr><td colspan=2><h3>Večeře</h3></td></tr>
 
                         {% for key in vecere %}
                             <tr><td>{{vecere[loop.index0][0]}}</td><td>{{vecere[loop.index0][1]}}</td></tr>
@@ -51,18 +51,33 @@
             <h2>Pizza a zdravá výživa</h2>
 
                 <table class="container">
-                    <tr><td><h3>Pizza</h3></td><td></td></tr>
+                    <tr><td colspan=2><h3>Pizza</h3></td></tr>
                     {% for key in pizza %}
                         <tr><td>{{pizza[loop.index0][0]}}</td><td>{{pizza[loop.index0][1]}}</td></tr>
                     {% endfor %}
                 </table>
 
                 <table class="container">
-                    <tr><td><h3>Zdravá výživa</h3></td><td></td></tr>
+                    <tr><td colspan=2><h3>Zdravá výživa</h3></td></tr>
                     {% for key in zdrava %}
                         <tr><td>{{zdrava[loop.index0][0]}}</td><td>{{zdrava[loop.index0][1]}}</td></tr>
                     {% endfor %}
                 </table>
+
+            <h2> Ostatní menzy</h2>
+            <table class="container">
+                <tr>
+                    <td><a href="http://www.divadelnicatering.cz/poledne/poledne.pdf">Bar deštník</a></td>
+                    <td><a href="http://jm.vse.cz/jidlo/41_14.pdf">Menza Jižní město</a></td>
+                </tr>
+            </table>
+
+            <table class="container">
+                <tr><td cospan=2><h3>Akademický klub</h3></td></tr>
+                {% for key in akademicky %}
+                    <tr><td>{{akademicky[loop.index0][1]}}</td></tr>
+                {% endfor %}
+            </table>
 
 
     </body>
