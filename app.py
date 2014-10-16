@@ -99,12 +99,13 @@ get_menza_akademicky = get_menza("http://www.vse.cz/menza/jidelni_listek_AK.php#
 
 @app.route('/')
 def main():
-    return render_template("index.html", obed=get_menza_obed(),
-                            pizza=get_pizza(),
-                            zdrava=get_zdrava(),
-                            akademicky=get_menza_akademicky(),
-                            ceny = ceny.ceny)
+    # return render_template("index.html", obed=get_menza_obed(),
+    #                         pizza=get_pizza(),
+    #                         zdrava=get_zdrava(),
+    #                         akademicky=get_menza_akademicky(),
+    #                         ceny = ceny.ceny)
+    return "Hello"
 
 
 if __name__ == '__main__':
-	app.run(debug=True)   
+	app.run(debug=False)   
