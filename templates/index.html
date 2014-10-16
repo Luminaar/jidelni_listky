@@ -17,16 +17,16 @@
                 <table class="tftable">
                     <tr><th colspan=3>Menza</th></tr>
                     {% for key in obed %}
-                        <tr><td>{{obed[loop.index0][0]}}</td><td>{{obed[loop.index0][1]}}</td><td>cena</td></tr>
+                        <tr><td>{{obed[loop.index0][0]}}</td><td>{{obed[loop.index0][1]}}</td><td>{{ceny["menza"][loop.index0]}}</td></tr>
                     {% endfor %}
                 </table>
 			</div>
 			
 			<div class="col-1-2">
                 <table class="tftable">
-	                <tr><th colspan=2>Pizza</th></tr>
+	                <tr><th colspan=3>Pizza</th></tr>
 	                {% for key in pizza %}
-	                    <tr><td>{{pizza[loop.index0][0]}}</td><td>{{pizza[loop.index0][1]}}</td></tr>
+	                    <tr><td>{{pizza[loop.index0][0]}}</td><td>{{pizza[loop.index0][1]}}</td><td>{{ceny["pizza"][loop.index0]}}</td></tr>
 	                {% endfor %}
 	            </table>
 			</div>
@@ -37,9 +37,9 @@
 			
 			<div class="col-1-2">
                 <table class="tftable">
-                    <tr><th colspan=2>Zdravá výživa</th></tr>
+                    <tr><th colspan=3>Zdravá výživa</th></tr>
                     {% for key in zdrava %}
-                        <tr><td>{{zdrava[loop.index0][0]}}</td><td>{{zdrava[loop.index0][1]}}</td></tr>
+                        <tr><td>{{zdrava[loop.index0][0]}}</td><td>{{zdrava[loop.index0][1]}}</td><td>{{ceny["zdrava"][loop.index0]}}</td></tr>
                     {% endfor %}
                 </table>
 			</div>
