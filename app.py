@@ -5,6 +5,8 @@ from bs4 import BeautifulSoup
 from requests import get
 from datetime import date
 
+import ceny
+
 app = Flask(__name__)
 
 def get_day_tag(url):
@@ -79,7 +81,7 @@ def get_zdrava_pizza(url):
         for i in listek:
             x = i.split(": ")
             # structure meals into dict, add whitespaces after every comma (with replace)
-            dict_listek[n] = [x[0], x[1].replace(",", ", ")]
+            dict_listek[n] = [x[0], x[1].replace(",", ", ").replace("(", " (")]
             n += 1
 
         return dict_listek
@@ -98,11 +100,11 @@ get_menza_akademicky = get_menza("http://www.vse.cz/menza/jidelni_listek_AK.php#
 @app.route('/')
 def main():
     return render_template("index.html", obed=get_menza_obed(),
-                            vecere=get_menza_vecere(),
                             pizza=get_pizza(),
                             zdrava=get_zdrava(),
-                            akademicky=get_menza_akademicky())
+                            akademicky=get_menza_akademicky(),
+                            ceny = ceny.ceny)
 
 
 if __name__ == '__main__':
-	app.run(debug=False)   
+	app.run(debug=True)   

@@ -1,91 +1,66 @@
 <html>
 
-<!-- Google analytics script -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-55504915-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-    <head>
+	<head>
         <title>Jídelní lístek</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    </head>
+	</head>
 
-    <body link="#DBD400" vlink="#B5AF00" alink="#FFF700">
-        <h1>Jídelní lístky</h1>
 
-        <h2>O projektu</h2>
+	<body>
+		<div id="header">
+			<h1>Jídelní lístky</h1>
+		</div>
 
-        <table style="width:50%" align="center">
-            <tr><td align="justify">
-                Po tom co jsem několikrát zavítal na oficiální stránky VŠE,
-                abych se podíval, co bude dneska k jídlu, nepřišlo mi to moc pohodlné.
-                Dlouho jsem přemýšlel o vytvoření jednoduché webové aplikace, která by 
-                zjišťování, co budu dneska jíst, zpříjemnila. Tak vznikla tato stránka.
-            </td><tr>
-        </table>
-
-            <h2>Menza</h2>
-                    <table class="container">
-                        <tr><td colspan=2><h3>Oběd</h3></td></tr>
-                        {% for key in obed %}
-                            <tr><td>{{obed[loop.index0][0]}}</td><td>{{obed[loop.index0][1]}}</td></tr>
-                        {% endfor %}
-                    </table>
-
-                    <table class="container">
-                        <tr><td colspan=2><h3>Večeře</h3></td></tr>
-
-                        {% for key in vecere %}
-                            <tr><td>{{vecere[loop.index0][0]}}</td><td>{{vecere[loop.index0][1]}}</td></tr>
-                        {% endfor %}
-                    </table>
-
-            <h2>Pizza a zdravá výživa</h2>
-
-                <table class="container">
-                    <tr><td colspan=2><h3>Pizza</h3></td></tr>
-                    {% for key in pizza %}
-                        <tr><td>{{pizza[loop.index0][0]}}</td><td>{{pizza[loop.index0][1]}}</td></tr>
+		<div class="row clearfix">
+			<div class="col-1-2 cell">
+                <table class="tftable">
+                    <tr><th colspan=3>Menza</th></tr>
+                    {% for key in obed %}
+                        <tr><td>{{obed[loop.index0][0]}}</td><td>{{obed[loop.index0][1]}}</td><td>cena</td></tr>
                     {% endfor %}
                 </table>
+			</div>
+			
+			<div class="col-1-2">
+                <table class="tftable">
+	                <tr><th colspan=2>Pizza</th></tr>
+	                {% for key in pizza %}
+	                    <tr><td>{{pizza[loop.index0][0]}}</td><td>{{pizza[loop.index0][1]}}</td></tr>
+	                {% endfor %}
+	            </table>
+			</div>
+		
+		</div>
 
-                <table class="container">
-                    <tr><td colspan=2><h3>Zdravá výživa</h3></td></tr>
+		<div class="row clearfix">
+			
+			<div class="col-1-2">
+                <table class="tftable">
+                    <tr><th colspan=2>Zdravá výživa</th></tr>
                     {% for key in zdrava %}
                         <tr><td>{{zdrava[loop.index0][0]}}</td><td>{{zdrava[loop.index0][1]}}</td></tr>
                     {% endfor %}
                 </table>
+			</div>
+			
+			<div class="col-1-2">
+		        <table class="tftable">
+		            <tr><th cospan=2>Akademický klub</th></tr>
+		            {% for key in akademicky %}
+		                <tr><td>{{akademicky[loop.index0][1]}}</td></tr>
+		            {% endfor %}
+		        </table>
+			</div>
 
-            <h2> Ostatní menzy</h2>
-            <table class="container">
-                <tr>
-                    <td><a href="http://www.divadelnicatering.cz/poledne/poledne.pdf">Bar deštník</a></td>
-                    <td><a href="http://jm.vse.cz/jidlo/41_14.pdf">Menza Jižní město</a></td>
-                </tr>
-            </table>
+		</div>
 
-            <table class="container">
-                <tr><td cospan=2><h3>Akademický klub</h3></td></tr>
-                {% for key in akademicky %}
-                    <tr><td>{{akademicky[loop.index0][1]}}</td></tr>
-                {% endfor %}
-            </table>
-
-
-    </body>
+	</body>
 
     <foot>
         <p align="center" style="font-size:small">Vytvořil: Maxim Kovykov, Jídelní lístky připravil: David Vokřál,
             Petr Čihař <br>
-            CSS téma vytvořil: Pablo García Fernandéz (@PablerShow)
         </p>
     </foot>
+
 </html>
