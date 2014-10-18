@@ -4,6 +4,8 @@ from flask import render_template
 from bs4 import BeautifulSoup
 from requests import get
 from datetime import date
+from pickle import Pickler
+from pickle import Unpickler
 
 import ceny
 
@@ -88,6 +90,60 @@ def get_zdrava_pizza(url):
 
     return _
 
+
+def check_current():
+    """ Checks if the menu was last retrieved in the
+        current day. If yes, returns True, else, returns False."""
+    
+    day_number = date.today().strftime("%w")
+
+    with open("last_updated", "rb") as f:
+        p = Unpickler(f)
+
+        last_updated = p.load()
+
+    if day_number == last_updated:
+        return True
+    else:
+        return False
+
+def get_menu():
+    """Checks if menu is current, if yes, load menu from file,
+        if not, downloads data from internet and saves them to file,
+        and updates last_updated"""
+    d = {}
+
+    if check_current():
+        with open("menu", "rb") as f:
+            p = Unpickler(f)
+            d = p.load()
+    else:
+        d = {
+        "obed" : get_menza_obed(),
+        "pizza" : get_pizza(),
+        "zdrava" : get_zdrava(),
+        "akademicky" : get_menza_akademicky()
+        }
+
+        # write new menu to file
+        with open("menu", "wb") as f:
+            f.truncate()
+            p = Pickler(f, 0)
+            p.dump(d)
+
+        # update last_updated
+        with open("last_updated", "wb") as f:
+            f.truncate()
+            p = Pickler(f, 0)
+            p.dump(date.today().strftime("%w"))
+
+
+
+    return d
+
+
+
+
 get_pizza = get_zdrava_pizza("http://www.vse.cz/menza/jidelni_listek_Pizza.php#3")
 get_zdrava = get_zdrava_pizza("http://www.vse.cz/menza/jidelni_listek_Zdrava_vyziva.php#5")
 
@@ -99,10 +155,11 @@ get_menza_akademicky = get_menza("http://www.vse.cz/menza/jidelni_listek_AK.php#
 
 @app.route('/')
 def main():
-    return render_template("index.html", obed=get_menza_obed(),
-                            pizza=get_pizza(),
-                            zdrava=get_zdrava(),
-                            akademicky=get_menza_akademicky(),
+    menu = get_menu()
+    return render_template("index.html", obed=menu["obed"],
+                            pizza=menu["pizza"],
+                            zdrava=menu["zdrava"],
+                            akademicky=menu["akademicky"],
                             ceny = ceny.ceny)
 
 

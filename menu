@@ -1,0 +1,196 @@
+(dp0
+Vobed
+p1
+(dp2
+L0L
+(lp3
+VPolévka (A)
+p4
+aVJarní s kuskusem
+p5
+asL1L
+(lp6
+VPolévka (B)
+p7
+aVSelská
+p8
+asL2L
+(lp9
+VMenu (A1)
+p10
+aVSma\u017eený vep\u0159ový \u0159ízek se sezamem, bram.ka\u0161e m.m., okurka
+p11
+asL3L
+(lp12
+VVital food (A2)
+p13
+aVKu\u0159ecí steak s raj\u010datovým p\u0159elivem, barevná rý\u017ee, salátek
+p14
+asL4L
+(lp15
+VMenu (B1)
+p16
+aVVep\u0159ová plec na chilli, ope\u010dené brambory
+p17
+asL5L
+(lp18
+VMenu (B2)
+p19
+aVTyrolská vep\u0159ová játra, t\u011bstoviny
+p20
+asL6L
+(lp21
+VBezmasé (C)
+p22
+aVSojový biftek, sázené vejce, hranolky, ho\u0159\u010dice, cibule
+p23
+asL7L
+(lp24
+VMinutka
+p25
+aVSalát talí\u0159: \u0160opský salát, bagetka
+p26
+asL8L
+(lp27
+VVýb\u011br
+p28
+aVVep\u0159ový steak s karamel. ovocem, americké brambory, obloha
+p29
+asL9L
+(lp30
+VGril
+p31
+aVSteak, omá\u010dka, p\u0159íloha (dle výb\u011bru)
+p32
+asL10L
+(lp33
+VFast food
+p34
+aVPanini, Gyros, Hamburger
+p35
+assVpizza
+p36
+(dp37
+L0L
+(lp38
+VPolévka
+p39
+aVTomatová
+p40
+asL1L
+(lp41
+VPizza
+p42
+aVNapoli (tomaty, sýr, cibule, an\u010dovi\u010dky)
+p43
+asL2L
+(lp44
+VPizza
+p45
+aVRoma (tomaty, sýr, \u0161unka, pórek, tu\u0148ák)
+p46
+asL3L
+(lp47
+VPizza
+p48
+aVSalcicia Picante (tomaty, sýr, pikantní salám, su\u0161ená raj\u010data)
+p49
+asL4L
+(lp50
+VPizza
+p51
+aVVegetariana (tomaty, sýr, zeleninová sm\u011bs)
+p52
+asL5L
+(lp53
+VPizza
+p54
+aVBanana (banány, \u010doko, o\u0159í\u0161ky)
+p55
+asL6L
+(lp56
+VT\u011bstoviny
+p57
+aVCon Salsiccia e Mais (salám, smetana, kuku\u0159ice, kapary)
+p58
+asL7L
+(lp59
+VT\u011bstoviny
+p60
+aVCon Salmone (be\u0161amel, pórek, losos, \u010desnek)
+p61
+asL8L
+(lp62
+VSalát
+p63
+aVDi pollo (zelenina, salát, ku\u0159ecí maso)
+p64
+asL9L
+(lp65
+VMou\u010dník
+p66
+aVZávin
+p67
+asL10L
+(lp68
+VMou\u010dník
+p69
+aVTiramisu
+p70
+assVakademicky
+p71
+(dp72
+L0L
+(lp73
+V
+p74
+aVSlepi\u010dí vývar
+p75
+asL1L
+(lp76
+g74
+aVVep\u0159ové nudli\u010dky s pórkem, du\u0161ená rý\u017ee
+p77
+asL2L
+(lp78
+g74
+aVBavorská klobása, bramborová ka\u0161e
+p79
+asL3L
+(lp80
+g74
+aVMou\u010dník dle denní nabídky
+p81
+asL4L
+(lp82
+g74
+aVMenu (polévka, hlavní jídlo, mou\u010dník)
+p83
+assVzdrava
+p84
+(dp85
+L0L
+(lp86
+VPolévka
+p87
+aVZ \u010dervené \u0159epy (neobsahuje lepek)
+p88
+asL1L
+(lp89
+VHlavní jídlo
+p90
+aVUzený tempeh, du\u0161ené zelí,                                     \u000a     jáhlový knedlík (obsahuje lepek)
+p91
+asL2L
+(lp92
+VHlavní jídlo
+p93
+aVKrupicová ka\u0161e (obsahuje lepek a \u017eiv.produkty)
+p94
+asL3L
+(lp95
+VHlavní jídlo
+p96
+aVPln\u011bný paprikový lusk                                 \u000a    s mletým masem, rajská omá\u010dka, rý\u017ee (obsahuje lepek a \u017eiv.produkty)
+p97
+ass.
