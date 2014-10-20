@@ -162,6 +162,10 @@ def main():
                             akademicky=menu["akademicky"],
                             ceny = ceny.ceny)
 
+@app.route('/koleje')
+def koleje():
+    return render_template("koleje.html")
+
 
 
 if __name__ == '__main__':

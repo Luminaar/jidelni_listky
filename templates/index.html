@@ -11,28 +11,46 @@
 		<div id="cssmenu">
 			<ul>
 				<li><span><p>&nbsp&nbsp&nbsp jídelní lístky</p></span></li>
-				<li class='active'><a href='http://www.jidelnicky.herokuapp.com'><span>žižkov</span></a></li>
-				<li><a href='http://jidelnicky.herokuapp.com'><span>koleje</span></a></li>
-				<li class='last'><a href='http://jidelnicky.herokuapp.com'><span>info</span></a></li>
+
+				{% block menu %}
+				
+					<li class='active'><a href='http://www.jidelnicky.herokuapp.com'><span>žižkov</span></a></li>
+					<li><a href='http://jidelnicky.herokuapp.com/koleje'><span>koleje</span></a></li>
+					<li class='last'><a href='http://jidelnicky.herokuapp.com'><span>info</span></a></li>
+
+				{% endblock %}
+
 			</ul>
 		</div>
 
 		<div class="row clearfix">
 			<div class="col-1-2 cell">
                 <table class="tftable">
-                    <tr><th colspan=3>Menza</th></tr>
-                    {% for key in obed %}
-                        <tr><td>{{obed[loop.index0][0]}}</td><td>{{obed[loop.index0][1]}}</td><td>{{ceny["menza"][loop.index0]}}</td></tr>
-                    {% endfor %}
+
+                	{% block first %}
+
+	                    <tr><th colspan=3>Menza</th></tr>
+	                    {% for key in obed %}
+	                        <tr><td>{{obed[loop.index0][0]}}</td><td>{{obed[loop.index0][1]}}</td><td>{{ceny["menza"][loop.index0]}}</td></tr>
+	                    {% endfor %}
+
+                    {% endblock%}
+
                 </table>
 			</div>
 			
 			<div class="col-1-2">
                 <table class="tftable">
-	                <tr><th colspan=3>Pizza</th></tr>
-	                {% for key in pizza %}
-	                    <tr><td>{{pizza[loop.index0][0]}}</td><td>{{pizza[loop.index0][1]}}</td><td>{{ceny["pizza"][loop.index0]}}</td></tr>
-	                {% endfor %}
+
+	                {% block second %}
+	                	
+	                	<tr><th colspan=3>Pizza</th></tr>
+		                {% for key in pizza %}
+		                    <tr><td>{{pizza[loop.index0][0]}}</td><td>{{pizza[loop.index0][1]}}</td><td>{{ceny["pizza"][loop.index0]}}</td></tr>
+		                {% endfor %}
+
+	                {% endblock %}
+
 	            </table>
 			</div>
 		
@@ -42,19 +60,31 @@
 			
 			<div class="col-1-2">
                 <table class="tftable">
-                    <tr><th colspan=3>Zdravá výživa</th></tr>
-                    {% for key in zdrava %}
-                        <tr><td>{{zdrava[loop.index0][0]}}</td><td>{{zdrava[loop.index0][1]}}</td><td>{{ceny["zdrava"][loop.index0]}}</td></tr>
-                    {% endfor %}
+
+                	{% block third %}
+
+	                    <tr><th colspan=3>Zdravá výživa</th></tr>
+	                    {% for key in zdrava %}
+	                        <tr><td>{{zdrava[loop.index0][0]}}</td><td>{{zdrava[loop.index0][1]}}</td><td>{{ceny["zdrava"][loop.index0]}}</td></tr>
+	                    {% endfor %}
+
+	                {% endblock %}
+
                 </table>
 			</div>
 			
 			<div class="col-1-2">
 		        <table class="tftable">
-		            <tr><th cospan=2>Akademický klub</th></tr>
-		            {% for key in akademicky %}
-		                <tr><td>{{akademicky[loop.index0][1]}}</td></tr>
-		            {% endfor %}
+
+		        	{% block fourth %}
+
+			            <tr><th cospan=2>Akademický klub</th></tr>
+			            {% for key in akademicky %}
+			                <tr><td>{{akademicky[loop.index0][1]}}</td></tr>
+			            {% endfor %}
+
+		            {% endblock %}
+
 		        </table>
 			</div>
 
