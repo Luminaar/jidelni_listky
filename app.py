@@ -22,7 +22,7 @@ def get_day_tag(url):
 
     return soup.find(attrs={"name" : day_number})
 
-def get_menza(url):
+def get_table(url):
     def _():
 
         day_tag = get_day_tag(url)
@@ -57,7 +57,8 @@ def get_menza(url):
     return _
 
 
-def get_zdrava_pizza(url):
+def get_list(url):
+    """Fetching data from a menu in a list"""
     def _():
 
         day_tag = get_day_tag(url)
@@ -94,7 +95,7 @@ def get_zdrava_pizza(url):
 def check_current():
     """ Checks if the menu was last retrieved in the
         current day. If yes, returns True, else, returns False."""
-    
+
     day_number = date.today().strftime("%w")
 
     with open("last_updated", "rb") as f:
@@ -119,10 +120,12 @@ def get_menu():
             d = p.load()
     else:
         d = {
-        "obed" : get_menza_obed(),
+        "obed" : get_menza_zizkov_obed(),
         "pizza" : get_pizza(),
         "zdrava" : get_zdrava(),
-        "akademicky" : get_menza_akademicky()
+        "akademicky" : get_akademicky(),
+        "jarov" : get_jarov(),
+        "volha" : get_volha()
         }
 
         # write new menu to file
@@ -144,13 +147,16 @@ def get_menu():
 
 
 
-get_pizza = get_zdrava_pizza("http://www.vse.cz/menza/jidelni_listek_Pizza.php#3")
-get_zdrava = get_zdrava_pizza("http://www.vse.cz/menza/jidelni_listek_Zdrava_vyziva.php#5")
+get_pizza = get_list("http://www.vse.cz/menza/jidelni_listek_Pizza.php#3")
+get_zdrava = get_list("http://www.vse.cz/menza/jidelni_listek_Zdrava_vyziva.php#5")
 
-get_menza_obed = get_menza("http://www.vse.cz/menza/obedy.php#5")
-get_menza_vecere = get_menza("http://www.vse.cz/menza/vecere.php#5")
+get_menza_zizkov_obed = get_table("http://www.vse.cz/menza/obedy.php#5")
+get_menza_zizkov_vecere = get_table("http://www.vse.cz/menza/vecere.php#5")
 
-get_menza_akademicky = get_menza("http://www.vse.cz/menza/jidelni_listek_AK.php#2")
+get_akademicky = get_table("http://www.vse.cz/menza/jidelni_listek_AK.php#2")
+
+get_jarov = get_list("http://www.vse.cz/menza/jidelni_listek_Jarov.php")
+get_volha = get_list("http://www.vse.cz/menza/jidelni_listek_Volha.php")
 
 
 @app.route('/')
@@ -164,9 +170,12 @@ def main():
 
 @app.route('/koleje')
 def koleje():
-    return render_template("koleje.html")
+    menu = get_menu()
+    return render_template("koleje.html",
+                           jarov=menu["jarov"],
+                           volha=menu["volha"])
 
 
 
 if __name__ == '__main__':
-	app.run(debug=False, host="0.0.0.0")   
+	app.run(debug=True, host="0.0.0.0")
