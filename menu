@@ -1,170 +1,170 @@
 (dp0
-Vpizza
+Vobed
 p1
 (dp2
 L0L
 (lp3
-VPolévka
+VPolévka (A)
 p4
-aVTomatová
+aVHov\u011bzí vývar se zeleninou
 p5
 asL1L
 (lp6
-VPizza
+VPolévka (B)
 p7
-aVMargarita (tomaty, sýr, bazalka)
+aVBrokolicová
 p8
 asL2L
 (lp9
-VPizza
+VMenu (A1)
 p10
-aVCrema (smetana, sýr, \u0161unka)
+aVMamin\u010dino ku\u0159e, salát s feferony
 p11
 asL3L
 (lp12
-VPizza
+VVital food (A2)
 p13
-aVBorsalino (tomaty, sýr, pikantní salám, kuku\u0159ice, cibule)
+aVPe\u010dené vep\u0159ové karé, va\u0159ené brambory, baby karotka
 p14
 asL4L
 (lp15
-VPizza
+VMenu (B1)
 p16
-aVVegetariana (tomaty, sýr, zeleninová sm\u011bs)
+aVKu\u0159ecí Kung-pao, du\u0161ená rý\u017ee
 p17
 asL5L
 (lp18
-VPizza
+VMenu (B2)
 p19
-aVBanana (banány, \u010doko, o\u0159í\u0161ky)
+aVSekaný \u0159ízek v t\u011bstí\u010dku, bramborová ka\u0161e m.m.
 p20
 asL6L
 (lp21
-VT\u011bstoviny
+VBezmasé (C)
 p22
-aVRosa Crema (be\u0161amel, napoli, \u010desnek, \u0161unka)
+aVFazole po breta\u0148sku, sázené vejce, chléb
 p23
 asL7L
 (lp24
-VT\u011bstoviny
+VMinutka
 p25
-aVQuatro Formaggi (ku\u0159ecí maso, 4druhy sýra, be\u0161amel, \u010desnek)
+aVHumrový salát s vejcem, pe\u010divo
 p26
 asL8L
 (lp27
-VSalát
+VVýb\u011br
 p28
-aVDi pollo (zelenina, salát, ku\u0159ecí maso)
+aVKachna na pomeran\u010dích, rozinková rý\u017ee, obloha
 p29
 asL9L
 (lp30
-VMou\u010dník
+VGril
 p31
-aVZávin
+aVStek, p\u0159íloha, omá\u010dka ( dle výb\u011bru)
 p32
 asL10L
 (lp33
-VMou\u010dník
+VFast food
 p34
-aVTiramisu
+aVPanini, Gyros, Hamburger
 p35
-assVzdrava
+assVakademicky
 p36
 (dp37
+sVzdrava
+p38
+(dp39
 L0L
-(lp38
+(lp40
 VPolévka
-p39
-aVFazolová (neobsahuje lepek)
-p40
-asL1L
-(lp41
-VHlavní jídlo
+p41
+aVZeleninový vývar                                               \u000a    s \u0159asou wakame a rý\u017eí (neobsahuje lepek)
 p42
-aVHo\u0159\u010dicová omá\u010dka s kapary a robi,                       \u000a    rý\u017ee (obsahuje lepek a \u017eiv.produkty)
-p43
-asL2L
-(lp44
+asL1L
+(lp43
 VHlavní jídlo
+p44
+aVUzené tofu s cizrnou a zeleninou (neobsahuje lepek)
 p45
-aVRybí filé,                                                         \u000a    polenta (neobsahuje lepek)
-p46
-asL3L
-(lp47
+asL2L
+(lp46
 VHlavní jídlo
+p47
+aVP\u0161eni\u010dné klaso na curry,                               \u000a     kuskus (obsahuje lepek)
 p48
-aVSma\u017eený celer v hra\u0161ce,                               \u000a    brambor (neobsahuje lepek)
-p49
-assVakademicky
+asL3L
+(lp49
+VHlavní jídlo
 p50
-(dp51
-sVobed
+aVLosos,                                                             \u000a    brambor (neobsahuje lepek)
+p51
+assVpizza
 p52
 (dp53
 L0L
 (lp54
-VPolévka (A)
+VPolévka
 p55
-aVKuku\u0159i\u010dná
+aVMinestrone
 p56
 asL1L
 (lp57
-VPolévka (B)
+VPizza
 p58
-aVZelná s bramborem
+aVFunghi (tomaty, sýr, \u017eampióny)
 p59
 asL2L
 (lp60
-VMenu (A1)
+VPizza
 p61
-aVSví\u010dková pe\u010den\u011b na smetan\u011b, houskové knedlíky
+aVDiavola (tomaty, sýr, slanina, paprika, chilli)
 p62
 asL3L
 (lp63
-VVital food (A2)
+VPizza
 p64
-aVMilánský ku\u0159ecí steak s raj\u010daty, cuketou a sýrem, penne
+aVProsciutto (tomaty, sýr, \u0161unka)
 p65
 asL4L
 (lp66
-VMenu (B1)
+VPizza
 p67
-aVVodi\u010dkovo rizoto s ku\u0159ecím masem a zeleninou, sýr
+aVVegetariana (tomaty, sýr, zeleninová sm\u011bs)
 p68
 asL5L
 (lp69
-VMenu (B2)
+VPizza
 p70
-aVSrbské vep\u0159ové \u017eebírko, du\u0161ená rý\u017ee
+aVBanana (banány, \u010doko, o\u0159í\u0161ky)
 p71
 asL6L
 (lp72
-VBezmasé (C)
+VT\u011bstoviny
 p73
-aVSma\u017eený sojový biftek s nivou, va\u0159ené brambory
+aVBoscaiola (\u010desnek, cuketa, lilek, \u017eampióny, olivy, tomaty)
 p74
 asL7L
 (lp75
-VMinutka
+VT\u011bstoviny
 p76
-aVSalát Capresse, fit kostka
+aVSaporiti (ku\u0159ecí maso, be\u0161amel, \u010desnek, brokolice, gorgonzola)
 p77
 asL8L
 (lp78
-VVýb\u011br
+VSalát
 p79
-aVZape\u010dený ku\u0159ecí \u0159ízek s broskví a sýrem, \u0161\u0165ouchané brambory, obloha
+aVDi pollo (zelenina, salát, ku\u0159ecí maso)
 p80
 asL9L
 (lp81
-VGril
+VMou\u010dník
 p82
-aVStek, p\u0159íloha, omá\u010dka ( dle výb\u011bru)
+aVZávin
 p83
 asL10L
 (lp84
-VFast food
+VMou\u010dník
 p85
-aVPanini, Gyros, Hamburger
+aVTiramisu
 p86
 ass.

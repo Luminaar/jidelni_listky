@@ -36,7 +36,9 @@
     width: 50%;
   }
 
-}
+}  
+
+
 
 /* other */
 body {
@@ -231,7 +233,7 @@ h2 a {
   display: none;
 }
 
-#
+
 @media screen and (max-width: 768px) {
   #cssmenu ul li {
     float: none;
