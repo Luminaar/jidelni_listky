@@ -123,7 +123,7 @@ def get_menu():
         "obed" : get_menza_zizkov_obed(),
         "pizza" : get_pizza(),
         "zdrava" : get_zdrava(),
-        "akademicky" : get_akademicky(),
+        "vecere" : get_menza_zizkov_vecere(),
         "jarov" : get_jarov(),
         "volha" : get_volha()
         }
@@ -165,7 +165,7 @@ def main():
     return render_template("index.html", obed=menu["obed"],
                             pizza=menu["pizza"],
                             zdrava=menu["zdrava"],
-                            akademicky=menu["akademicky"],
+                            vecere=menu["vecere"],
                             ceny = ceny.ceny)
 
 @app.route('/koleje')
@@ -175,7 +175,5 @@ def koleje():
                            jarov=menu["jarov"],
                            volha=menu["volha"])
 
-
-
 if __name__ == '__main__':
-	app.run(debug=True, host="0.0.0.0")
+	app.run(debug=False, host="0.0.0.0")
