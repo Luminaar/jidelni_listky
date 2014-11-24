@@ -1,248 +1,272 @@
 (dp0
-Vakademicky
+Vpizza
 p1
 (dp2
-sVobed
-p3
-(dp4
 L0L
-(lp5
-VPolévka (A)
-p6
-aVKv\u011btáková se zeleninou
-p7
-asL1L
-(lp8
-VPolévka (B)
-p9
-aVMasový krém
-p10
-asL2L
-(lp11
-VMenu (A1)
-p12
-aVBurgundská hov\u011bzí pe\u010den\u011b, houskové knedlíky
-p13
-asL3L
-(lp14
-VVital food (A2)
-p15
-aVVep\u0159ové karé protýkané mrkví, va\u0159ené brambory, breta\u0148ská zelenina
-p16
-asL4L
-(lp17
-VMenu (B1)
-p18
-aVKung-pao z vep\u0159ového masa, du\u0161ená rý\u017ee
-p19
-asL5L
-(lp20
-VMenu (B2)
-p21
-aV\u010co\u010dka na kyselo, uzené maso, cibulka, okurka
-p22
-asL6L
-(lp23
-VBezmasé (C)
-p24
-aVZeleninové rizoto s kapií sypané sýrem
-p25
-asL7L
-(lp26
-VMinutka
-p27
-aVZeleninový salát se sma\u017eenými krevetkami, pe\u010divo
-p28
-asL8L
-(lp29
-VVýb\u011br
-p30
-aVKu\u0159ecí steak na bylinkách, ope\u010dené brambory, grilovaná zelenina
-p31
-asL9L
-(lp32
-VGril
-p33
-aVSteak, p\u0159íloha, omá\u010dka (dle výb\u011bru)
-p34
-asL10L
-(lp35
-VFast food
-p36
-aVPanini, gyros, hamburger
-p37
-assVjarov
-p38
-(dp39
-L0L
-(lp40
+(lp3
 VPolévka
-p41
-aVZeleninový vývar s nudlemi
-p42
-asL1L
-(lp43
-VHotovka
-p44
-aVZnojemská hov\u011bzí pe\u010den\u011b,  rý\u017ee,  houskový knedlík (hov.zadní,  okurka,  mouka,  cibule,  sm\u011bs ko\u0159ení,  alergeny 1,  3)
-p45
-asL2L
-(lp46
-VHotovka
-p47
-aVK\u0159ehké ku\u0159ecí nudli\u010dky,  hranolky,  \u010desnekový dip (ku\u0159.prsa,  zelenina,  solamyl,  sm\u011bs ko\u0159ení,  alergen 7)
-p48
-asL3L
-(lp49
-VHotovka
-p50
-aVT\u011bstovinový salát se \u0161unkou,  sýrem a kuku\u0159icí (t\u011bstoviny,  raj\u010de,  okurka,  paprika,  \u0161unka,  sýr,  led.salát,  kuku\u0159ice,  alergen 7)
-p51
-asL4L
-(lp52
-VVe\u010de\u0159e
-p53
-aVVep\u0159ový steak se \u0161unkou a sýrem,  brambory (vep\u0159.kýta,  eidam,  \u0161unka,  sm\u011bs ko\u0159ení,  alergen 7)
-p54
-assVpizza
-p55
-(dp56
-L0L
-(lp57
-VPolévka
-p58
+p4
 aVTomatová
-p59
+p5
 asL1L
-(lp60
+(lp6
 VPizza
-p61
-aVBolzano (tomaty, sýr, slanina, \u017eampióny)
-p62
+p7
+aVFunghi (tomaty, sýr, \u017eampióny)
+p8
 asL2L
-(lp63
+(lp9
 VPizza
-p64
-aVProsciutto (tomaty, sýr, \u0161unka, )
-p65
+p10
+aVMontana (tomaty, sýr, slanina, uzený sýr)
+p11
 asL3L
-(lp66
+(lp12
 VPizza
-p67
-aVQuatro Formaggi (smetana, 4druhy sýra)
-p68
+p13
+aVTonno (tomaty, sýr, \u0161unka, cibule, tu\u0148ák)
+p14
 asL4L
-(lp69
+(lp15
 VPizza
-p70
+p16
 aVVegetariana (tomaty, sýr, zeleninová sm\u011bs)
-p71
+p17
 asL5L
-(lp72
+(lp18
 VPizza
-p73
+p19
 aVBanana (banány, \u010doko, o\u0159í\u0161ky)
-p74
+p20
 asL6L
-(lp75
+(lp21
 VT\u011bstoviny
-p76
-aVCon Salsiccia e Mais (smetana, salám, kuku\u0159ice, kapary)
-p77
+p22
+aVSenape (\u010desnek, cuketa, salám, dijon, be\u0161amel, su\u0161ená raj\u010data)
+p23
 asL7L
-(lp78
+(lp24
 VT\u011bstoviny
-p79
-aVCurry (be\u0161amel, ku\u0159ecí maso, \u010desnek, curry, \u017eampióny)
-p80
+p25
+aVSpinaci (be\u0161amel, ku\u0159ecí maso, \u010desnek, \u0161penát)
+p26
 asL8L
-(lp81
+(lp27
 VSalát
-p82
+p28
 aVDi pollo (zelenina, salát, ku\u0159ecí maso)
-p83
+p29
 asL9L
-(lp84
+(lp30
 VMou\u010dník
-p85
+p31
 aVZávin
-p86
+p32
 asL10L
-(lp87
+(lp33
 VMou\u010dník
-p88
+p34
 aVTiramisu
-p89
-assVzdrava
-p90
-(dp91
+p35
+assVobed
+p36
+(dp37
 L0L
-(lp92
-VPolévka
-p93
-aVZ \u010dervené \u0159epy (neobsahuje lepek)
-p94
+(lp38
+VPolévka (A)
+p39
+aVHanácká cibula\u010dka
+p40
 asL1L
-(lp95
-VHlavní jídlo
-p96
-aV\u017ditné rizoto se zeleninou (obsahuje lepek)
-p97
+(lp41
+VPolévka (B)
+p42
+aVFazolová
+p43
 asL2L
-(lp98
-VHlavní jídlo
-p99
-aVZape\u010dený kv\u011bták s bramborem (neobsahuje lepek, obsahuje \u017eiv.produkty)
-p100
+(lp44
+VMenu (A1)
+p45
+aVSma\u017eený sýr, va\u0159ené brambory m.m., tatarka
+p46
 asL3L
-(lp101
-VHlavní jídlo
-p102
-aVLosos,                                                            \u000a    brambor (neobsahuje lepek)
-p103
-assVvolha
-p104
-(dp105
-L0L
-(lp106
-VPolévka
-p107
-aV\u010co\u010dková s párkem - Zelná s klobásou
-p108
-asL1L
-(lp109
-VHotovka
-p110
-aVHov\u011bzí na majoránce,  houskový knedlík (hov.zadní,  sm\u011bs ko\u0159ení)
-p111
-asL2L
-(lp112
-VHotovka
-p113
-aVUzená kýta,  bramborová ka\u0161e,  okurka
-p114
-asL3L
-(lp115
-VHotovka
-p116
-aVKu\u0159ecí steak zape\u010dený s balkánským sýrem,  brambory (ku\u0159.prsa,  balkánský sýr,  mouka,  sm\u011bs ko\u0159ení)
-p117
+(lp47
+VVital food (A2)
+p48
+aVKu\u0159ecí steak na zázvoru, hrá\u0161kový kuskus, salátek
+p49
 asL4L
-(lp118
-VHotovka
-p119
-aVZeleninový salát s tu\u0148ákem a vejcem (sm\u011bs salát\u016f,  raj\u010de,  okurka,  paprika,  tu\u0148ák,  vejce)
-p120
+(lp50
+VMenu (B1)
+p51
+aVSegedínský gulá\u0161 Speciál, houskové knedlíky
+p52
 asL5L
-(lp121
-VHotovka
-p122
-aVTeplá \u0161unka od kosti,  bramborový salát
-p123
+(lp53
+VMenu (B2)
+p54
+aVUhlí\u0159ské \u0161pagety sypané sýrem
+p55
 asL6L
-(lp124
+(lp56
+VBezmasé (C)
+p57
+aVSojové maso po mexicku, du\u0161ená rý\u017ee
+p58
+asL7L
+(lp59
+VMinutka
+p60
+aVSalát Nikosie s ku\u0159ecím masem a vejci
+p61
+asL8L
+(lp62
+VVýb\u011br
+p63
+aVVep\u0159ový steak s hermelínem a o\u0159echy, hranolky, obloha
+p64
+asL9L
+(lp65
+VGril
+p66
+aVSteak, p\u0159íloha, omá\u010dka (dle výb\u011bru)
+p67
+asL10L
+(lp68
+VFast food
+p69
+aVPanini + 0,3l post mix, Gyros, Hamburger
+p70
+assVzdrava
+p71
+(dp72
+L0L
+(lp73
+VPolévka
+p74
+aV\u010co\u010dková (neobsahuje lepek)
+p75
+asL1L
+(lp76
+VHlavní jídlo
+p77
+aVRobi maso s okurkovou omá\u010dkou,                         \u000a    rý\u017ee (obsahuje lepek a \u017eiv.produkty)
+p78
+asL2L
+(lp79
+VHlavní jídlo
+p80
+aVAlja\u0161ská treska,                                              \u000a    brambor (neobsahuje lepek)
+p81
+asL3L
+(lp82
+VHlavní jídlo
+p83
+aVMarinovaný celer,                                          \u000a     kuskus (obsahuje lepek)
+p84
+assVvecere
+p85
+(dp86
+L0L
+(lp87
+VMenu (A1)
+p88
+aVSma\u017eené rybí filé se sýrem, va\u0159ené brambory m.m., tatarka
+p89
+asL1L
+(lp90
+VMenu (B1)
+p91
+aVRizoto z vep\u0159ového masa sypané sýrem, okurka)
+p92
+asL2L
+(lp93
+VFast food
+p94
+aVPizza, Panini (dle výb\u011bru)
+p95
+assVvolha
+p96
+(dp97
+L0L
+(lp98
+VPolévka
+p99
+aVHrachová s chlebovými krutony - Hov\u011bzí vývar s rý\u017eí (1)
+p100
+asL1L
+(lp101
+VHotovka
+p102
+aVBud\u011bjovická hov\u011bzí pe\u010den\u011b,  houskový knedlík (hov.zadní,  mouka,  sm\u011bs ko\u0159ení) (1)
+p103
+asL2L
+(lp104
+VHotovka
+p105
+aVMexické ku\u0159ecí nudli\u010dky,  rý\u017ee (ku\u0159.stehen.\u0159ízek,  ke\u010dup,  sm\u011bs zeleniny,  solamyl,  sm\u011bs ko\u0159ení)
+p106
+asL3L
+(lp107
+VHotovka
+p108
+aVKrkovice na ho\u0159\u010dici,  brambory (vep\u0159.krkovice,  mouka,  ho\u0159\u010dice,  sm\u011bs ko\u0159ení) (1, 10)
+p109
+asL4L
+(lp110
+VHotovka
+p111
+aVZeleninový salát se \u0161unkou,  sýrem a bylinkovou zálivkou (sm\u011bs salát\u016f,  raj\u010de,  okurka,  paprika,  \u0161unka,  sýr,  sm\u011bs bylinek) (1, 7)
+p112
+asL5L
+(lp113
+VHotovka
+p114
+aVPanenka v sýrovém t\u011bstí\u010dku,  brambory s cibulkou,  americký dip (vep\u0159.panenka,  vejce,  mouka,  majonéza,  ke\u010dup,  sm\u011bs ko\u0159ení) (1, 3)
+p115
+asL6L
+(lp116
 VVe\u010de\u0159e
+p117
+aVKu\u0159ecí prsa v kuku\u0159i\u010dné krust\u011b,  bramborová ka\u0161e (ku\u0159.prsa,  kuku\u0159.lupínky,  vejce,  mléko,  sm\u011bs ko\u0159ení) (1, 3, 9)
+p118
+assVjarov
+p119
+(dp120
+L0L
+(lp121
+VPolévka
+p122
+aV\u017dampionová (1, 7)
+p123
+asL1L
+(lp124
+VHotovka
 p125
-aVMletý biftek zape\u010dený se sýrem,  hranolky,  tatarka
+aVKu\u0159ecí steak s beraními rohy,  hranolky (ku\u0159.prsa,  eidam,  ber.rohy,  sm\u011bs ko\u0159ení) (1, 7)
 p126
+asL2L
+(lp127
+VHotovka
+p128
+aVPe\u010dené vep\u0159ové,  \u0161penát,  houskový knedlík (vep\u0159.plec,  mouka,  sm\u011bs ko\u0159ení) (1, 3, 7)
+p129
+asL3L
+(lp130
+VHotovka
+p131
+aVZeleninový salát s vají\u010dkem,  kuku\u0159icí a \u0161unkou (led.salát,  raj\u010de,  okurka,  paprika,  vejce,  \u0161unka,  kuku\u0159ice) (3)
+p132
+asL4L
+(lp133
+VHotovka
+p134
+aVP\u0159írodní vep\u0159ové medailonky,  zámecké brambory (vep\u0159.panenka,  zelenina,  sm\u011bs ko\u0159ení) (1)
+p135
+asL5L
+(lp136
+VVe\u010de\u0159e
+p137
+aVKu\u0159ecí steak capresse,  hranolky (ku\u0159.prsa,  raj\u010de,  sýr,  sm\u011bs ko\u0159ení) (7)
+p138
 ass.
