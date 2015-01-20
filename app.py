@@ -108,6 +108,12 @@ def check_current():
     else:
         return False
 
+def get_last_updated():
+    with open("last_updated", "rb") as f:
+        p = Unpickler(f)
+
+        return p.load()
+
 def get_menu():
     """Checks if menu is current, if yes, load menu from file,
         if not, downloads data from internet and saves them to file,
@@ -166,7 +172,8 @@ def main():
                             pizza=menu["pizza"],
                             zdrava=menu["zdrava"],
                             vecere=menu["vecere"],
-                            ceny = ceny.ceny)
+                            ceny = ceny.ceny,
+                            last_updated = get_last_updated())
 
 @app.route('/koleje')
 def koleje():
