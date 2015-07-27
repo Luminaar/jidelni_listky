@@ -1,0 +1,47 @@
+<html>
+
+	<head>
+        <title>Jídelní lístek</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	</head>
+
+
+	<body>
+		<div id="cssmenu">
+			<ul>
+				<li><span><p>&nbsp&nbsp&nbsp jídelní lístky</p></span></li>
+
+				{% block menu %}
+				
+					<li><a href='http://jidelnicky.herokuapp.com'><span>žižkov</span></a></li>
+					<li><a href='http://jidelnicky.herokuapp.com/koleje'><span>koleje</span></a></li>
+					<li class='active'><a href='http://jidelnicky.herokuapp.com/souce'><span>souce</span></a></li>
+					<li class='last'><a href='http://jidelnicky.herokuapp.com'><span>info</span></a></li>
+
+				{% endblock %}
+
+			</ul>
+		</div>
+
+    <div class='wrap'>
+      {% for p in pastas: %}
+        <div class='circle' style='{{p[2]}}'>
+          {{p[0]}}. {{p[1]}}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div style='clear: both;'></div>
+
+
+	</body>
+
+    <foot>
+        <p align="center" style="font-size:small">Vytvořil: Maxim Kovykov, Jídelní lístky připravil: David Vokřál,
+            Petr Čihař <br>
+            {{last_updated}} 
+        </p>
+    </foot>
+
+</html>
