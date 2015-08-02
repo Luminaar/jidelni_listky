@@ -123,21 +123,6 @@ h2 a {
   text-decoration: none;
 }
 
-.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  float:left;
-  margin: 30px;
-}
-
-.wrap {
-  margin-left: auto;
-  margin-right: auto;
-  width: 520px;
-}
-
-
 /* Menu bar */
 #cssmenu {
   background: #2C3446;

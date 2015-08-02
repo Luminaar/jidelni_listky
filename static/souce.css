@@ -1,0 +1,28 @@
+.circle {
+  width: 20%;
+  padding-bottom: 20%;
+  height: 0;
+  border-radius: 50%;
+  float:left;
+  margin: 30px;
+
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.first {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  transform: translate(-60%, -20%);
+}
+
+.second {
+  position: absolute;
+  left: 60%;
+  top: 20%;
+  transform: translate(-40%, -20%);
+}
+
+h1 {
+  text-align: center;
+}
