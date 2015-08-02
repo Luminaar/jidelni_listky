@@ -238,7 +238,7 @@ def souce():
 
     return render_template('souce.html', 
             menu=menu_pizza,
-            pastas=pastas)
+            pastas=list(pastas))
 
 if __name__ == '__main__':
-    app.run(debug=False, host="0.0.0.0")
+    app.run(debug=True, host="0.0.0.0")
