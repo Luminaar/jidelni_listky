@@ -1,10 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:700);
+
+body {
+  font-family: Cabin;
+  font-weight: 600;
+  line-height: 1.42em;
+  text-transform: uppercase;
+}
+
 .circle {
   width: 20%;
   padding-bottom: 20%;
   height: 0;
   border-radius: 50%;
-  float:left;
   margin: 30px;
+
+  text-align: center;
 
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
 }
@@ -21,6 +31,14 @@
   left: 60%;
   top: 20%;
   transform: translate(-40%, -20%);
+}
+
+.text-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4C4C4C;
 }
 
 h1 {
